@@ -1,0 +1,73 @@
+.notices-container {
+	display: flex;
+	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	flex: 1 0 0;
+	align-self: stretch;
+}
+
+.single-notice-container {
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	align-self: stretch;
+	border-radius: 0.5rem;
+	background: #ffffff;
+
+	.descWrapper {
+		ol {
+			list-style: decimal;
+			margin: initial;
+			padding: 0 1rem;
+		}
+		ul {
+			list-style: disc;
+			margin: initial;
+			padding: 0 1rem;
+		}
+		&.max {
+			overflow: hidden;
+			height: 8rem;
+		}
+		&.expand {
+			overflow: visible;
+			height: auto;
+		}
+	}
+	.readmore {
+		color: #386cbb;
+		padding: 10px 10px 10px 0;
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+	.content {
+		color: #000;
+		font-feature-settings: "clig" off, "liga" off;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.5rem;
+	}
+
+	.button-group {
+		display: flex;
+		padding: 0.5rem 0.75rem;
+		align-items: flex-start;
+		gap: 0.75rem;
+		align-self: stretch;
+	}
+}
+
+.ql-editor {
+	min-height: 30vh;
+	max-height: 70vh;
+	border-top: 1px solid #e7e7e7;
+}
+
+.quill {
+	display: flex;
+	flex-direction: column-reverse;
+}

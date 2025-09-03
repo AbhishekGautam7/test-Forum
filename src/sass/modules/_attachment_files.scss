@@ -1,0 +1,53 @@
+.fileList {
+  display: flex;
+  margin: 0px;
+  flex-direction: column;
+  padding: 10px 0;
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 54px;
+    background: #f8f8f8;
+
+    border-bottom: 4px solid #fff;
+    font-size: 14px;
+    line-height: 18px;
+    .icon {
+      display: flex;
+      width: 82px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      button {
+        color: #404244;
+        color: var(--black-color);
+        text-decoration: none;
+        background:none;
+        border:none;
+        padding:0px;
+      }
+    }
+    .desc {
+      display: flex;
+      width: 100%;
+      flex: 1 1 auto;
+      align-items: center;
+      border-left: 4px solid #fff;
+      padding: 18px;
+      a,button {
+        color: var(--black-color);
+        text-decoration: none;
+        display: block;
+        width: calc(100% - 31px);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+         background:none;
+        border:none;
+        padding:0px;
+        text-align:left;
+      }
+    }
+  }
+}

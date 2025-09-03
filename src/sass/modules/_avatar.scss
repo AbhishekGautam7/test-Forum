@@ -1,0 +1,23 @@
+.avatar {
+	position: relative;
+	.avatar-tooltip {
+		position: absolute;
+		display: none;
+		font-size: 0.8rem;
+		top: -30px;
+		z-index: 999;
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		padding: 0.2rem;
+		border-radius: 4px;
+		left: 3px;
+		min-width: 100px;
+		max-width: 180px;
+		text-align: center;
+	}
+	&:hover {
+		.avatar-tooltip {
+			display: block;
+		}
+	}
+}

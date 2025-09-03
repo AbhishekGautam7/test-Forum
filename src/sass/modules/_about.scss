@@ -1,0 +1,160 @@
+.insights-time-wrap {
+	@media (max-width: 375px) {
+		display: block;
+		margin-top: 5px;
+	}
+	span {
+		margin: 0 0 3px;
+		display: block;
+		font-size: 12px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.25;
+		letter-spacing: normal;
+		&.time-peroid {
+			color: rgba(20, 24, 35, 0.4);
+		}
+	}
+	.last-days {
+		color: #141823;
+		margin: 0 0 3px;
+		display: block;
+		font-size: 12px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.25;
+		letter-spacing: normal;
+		img {
+			width: 9px;
+			height: 10px;
+			margin-left: 4px;
+		}
+	}
+	.dropdown-toggle {
+		&:after {
+			display: none;
+		}
+	}
+	.default-config-dropdown {
+		li {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a.span.a {
+				color: #141823;
+				font-size: 12px;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.25;
+				letter-spacing: normal;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.community-insights-holder {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	padding: 15px 0;
+	.insights-members-wrap {
+		padding: 0 20px;
+		text-align: center;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: normal;
+		flex: 1;
+		@media (max-width: 425px) {
+			padding: 0 4px;
+		}
+		h4 {
+			font-size: 14px;
+			margin: 0 0 8px;
+			font-weight: 600;
+		}
+		p {
+			font-weight: normal;
+			margin: 0 0 24px;
+			font-size: 12px;
+			color: rgba(20, 24, 35, 0.4);
+		}
+		&:first-child {
+			border-right: 1px solid #e0e0e0;
+		}
+		.members-count {
+			display: block;
+			font-size: 50px;
+			font-weight: 600;
+			@media (max-width: 425px) {
+				font-size: 30px;
+			}
+		}
+		.insufficient-data {
+			display: block;
+			margin-top: 50px;
+			font-size: 12px;
+			font-weight: normal;
+			@media (max-width: 425px) {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+.see-more-link {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.8;
+	letter-spacing: 0.14px;
+	color: #386cbb;
+}
+
+.about-member-list {
+	h4 {
+		margin: 0 0 15px;
+		font-size: 14px;
+		font-weight: 600;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.36;
+		letter-spacing: normal;
+		color: rgba(20, 24, 35, 0.4);
+		@media (max-width: 575px) {
+			text-align: center;
+		}
+	}
+	.default-member-img-list {
+		a {
+			margin-bottom: 12px;
+		}
+	}
+}
+
+.members-name {
+	margin-top: 8px;
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.36;
+	letter-spacing: normal;
+	text-align: left;
+	color: rgba(20, 24, 35, 0.4);
+	@media (max-width: 575px) {
+		text-align: center;
+	}
+	&:hover {
+		color: rgba(20, 24, 35, 0.4);
+	}
+}

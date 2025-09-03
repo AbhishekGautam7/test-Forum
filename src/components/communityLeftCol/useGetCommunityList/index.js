@@ -1,0 +1,1 @@
+export { useGetCommunityList } from "./useGetCommunityList";

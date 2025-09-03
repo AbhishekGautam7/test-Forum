@@ -1,0 +1,49 @@
+@import "base/variables_override";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "base/base";
+@import "base/mixins";
+@import "modules/community_left_sidebar";
+@import "modules/community_middle_content";
+@import "modules/community_right_sidebar";
+@import "modules/community_modal";
+@import "modules/posting_section";
+@import "modules/default_community";
+@import "modules/about";
+@import "modules/community_insights";
+@import "modules/files";
+@import "modules/events";
+@import "modules/discover";
+@import "modules/community-detail";
+@import "modules/search_results";
+@import "modules/loading_box";
+@import "modules/custom_selectbox";
+@import "modules/typing_indicator";
+@import "modules/message_box";
+@import "modules/editor";
+@import "modules/gallery";
+@import "modules/attachment_files";
+@import "modules/date_picker";
+@import "modules/date_pick";
+@import "modules/pop_user";
+@import "modules/suggested_community";
+@import "modules/custom_datalist";
+@import "modules/community_chats";
+@import "modules/group_detail";
+@import "modules/group_setting";
+@import "modules/notices";
+@import "modules/private_chats";
+@import "modules/skeleton";
+@import "modules/community_left_col";
+@import "modules/topBar";
+@import "modules/avatar";
+@import "modules/notification";
+@import "modules/multiselect_dropdown";
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Inter Regular"),
+    url("https://community-forum-sandbox.s3.eu-west-1.amazonaws.com/webview/Inter-Regular.woff")
+      format("woff");
+}

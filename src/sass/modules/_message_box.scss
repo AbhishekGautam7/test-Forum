@@ -1,0 +1,20 @@
+#messageBox {
+	.create-modal-dialog {
+		max-width: 100%;
+		width: 500px;
+	}
+	.modal-body {
+		text-align: center;
+		min-height: 100px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+}
+.mobile-container #messageBox {
+	.create-modal-dialog {
+		max-width: 90%;
+		width: 90%;
+		margin: 33px auto 0 auto;
+	}
+}

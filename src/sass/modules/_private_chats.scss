@@ -1,0 +1,10 @@
+@use "../base/variables_override" as *;
+
+.member-box {
+	cursor: pointer;
+	padding: 0.7rem 0.5rem;
+	border-radius: 6px;
+	&:hover {
+		background: rgba($primary-rgb, 0.1);
+	}
+}

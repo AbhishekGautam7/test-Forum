@@ -1,0 +1,43 @@
+.editor {
+  border: solid 1px #ccc;
+  padding: 10px;
+  font-size: 12px;
+  color: #333;
+  min-height: 150px;
+  max-height: 400px;
+  overflow: auto;
+  margin: 10px 0;
+}
+.editor {
+  outline: none;
+  ul {
+    margin: 0 0 0 15px;
+    list-style: disc;
+    padding: 10px 0;
+    li {
+      padding: 3px 0;
+    }
+  }
+  ol {
+    margin: 0 0 0 15px;
+    list-style: decimal;
+    padding: 10px 0;
+    li {
+      padding: 3px 0;
+    }
+  }
+}
+.editor:focus {
+  border: solid 1px #f8f8f8;
+}
+.editor[placeholder]:empty::before {
+  content: attr(placeholder);
+  font-weight: normal;
+  font-size: 12px;
+
+  color: rgba(88, 88, 88, 0.4);
+}
+
+.editor[placeholder]:empty:focus::before {
+  content: "";
+}

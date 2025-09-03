@@ -1,0 +1,1 @@
+export { useGetDefaultCommunity } from "./useGetDefaultCommunity";

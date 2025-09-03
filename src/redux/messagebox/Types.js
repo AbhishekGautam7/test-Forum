@@ -1,0 +1,3 @@
+export const SET_MESSAGE_BOX = "SET_MESSAGE_BOX";
+export const SET_MESSAGE_TXT = "SET_MESSAGE_TXT";
+export const SET_CLOSE_BTN = "SET_CLOSE_BTN";

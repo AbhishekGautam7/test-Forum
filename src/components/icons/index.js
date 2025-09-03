@@ -1,0 +1,15 @@
+export { default as TickIcon } from "./tickIcon";
+export { default as InfoIcon } from "./InfoIcon";
+export { default as EditIcon } from "./editIcon";
+export { default as PostIcon } from "./postIcon";
+export { default as InviteIcon } from "./inviteIcon";
+export { default as PublicIcon } from "./publicIcon";
+export { default as MessageIcon } from "./messageIcon";
+export { default as PrivateIcon } from "./privateIcon";
+export { default as FavouriteIcon } from "./favouriteIcon";
+export { default as CommunityAdminIcon } from "./communityAdminIcon";
+export { default as FavouriteUncheckedIcon } from "./favouriteUncheckedIcon";
+export { default as TopLeftIcon } from "./topLeftIcon";
+export { default as TopRightIcon } from "./topRightIcon";
+export { default as ArrowLeftIcon } from "./arrowLeftIcon";
+export { default as ArrowRightIcon } from "./arrowRightIcon";

@@ -1,0 +1,21 @@
+.loadingBox {
+  font-size: 18px;
+  text-align: center;
+  height: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h3 {
+    font-size: 18px;
+  }
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background: #333;
+    color: #fff;
+    min-width: 100px;
+    margin-top: 30px;
+    border: none;
+  }
+}

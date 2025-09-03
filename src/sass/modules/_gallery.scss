@@ -1,0 +1,329 @@
+$gallery-height: 450px;
+.singleVideo,
+.slider {
+  video {
+    width: 100%;
+    height: $gallery-height;
+    object-fit: cover;
+  }
+}
+.singleImage {
+  position: relative;
+  overflow: hidden;
+  &.portait {
+    img.frontImg {
+      object-fit: contain;
+      height: $gallery-height;
+      position: relative;
+      z-index: 2;
+    }
+    img.backImg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+    }
+  }
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px 0 20px;
+  .sliderInner {
+    position: relative;
+    overflow: hidden;
+  }
+  img {
+    object-fit: contain;
+    height: $gallery-height;
+    position: relative;
+    z-index: 2;
+  }
+  .img {
+    position: relative;
+    .backimg {
+      position: absolute;
+      object-fit: cover;
+      -webkit-filter: blur(10px);
+      filter: blur(10px);
+    }
+    img.land {
+      object-fit: cover;
+    }
+  }
+  .backBtn,
+  .nextBtn,
+  .prevBtn,
+  .downloadBtn {
+    position: absolute;
+    background: transparent;
+    z-index: 99;
+    border: none;
+    padding: 0px;
+    img {
+      object-fit: none;
+    }
+  }
+  .backBtn {
+    z-index: 99;
+    border: none;
+    left: 0px;
+    top: 0px;
+    height: 200px;
+    border: none;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .nextBtn {
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+    top: 50%;
+    right: 15px;
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+  }
+  .prevBtn {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 15px;
+    border: none;
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+  }
+  .downloadBtn {
+    width: 200px;
+    position: absolute;
+    z-index: 99;
+    background: transparent;
+    border: none;
+    right: 0px;
+    top: 0px;
+    height: 200px;
+    border: none;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+.gallery {
+  position: relative;
+  padding: 0 18px 10px;
+  display: flex;
+  flex-direction: column;
+  height: $gallery-height;
+  margin-top: 10px;
+  overflow: hidden;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+  .firstTile {
+    display: flex;
+    height: 50%;
+    flex: 1 1 auto;
+    // border: 4px solid red !important;
+
+    .pic {
+      object-fit: cover;
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &.vtile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    .firstTile {
+      display: flex;
+      flex: 1 1;
+      border-right: 1px solid #fff;
+      height: 100%;
+    }
+    .tileRow {
+      display: flex;
+      flex: 1 1;
+      flex-direction: column;
+
+      .secondTile,
+      .thirdTile {
+        position: relative;
+        display: flex;
+        flex: 1 1 auto;
+        height: 50%;
+        object-fit: cover;
+        video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .thirdTile {
+        position: relative;
+        border-top: 1px solid #fff;
+        .mask {
+          border-top: 0px solid #fff;
+        }
+      }
+    }
+  }
+  &.squre {
+    padding: 0px;
+    .tileRow {
+      display: flex;
+      height: 50%;
+      .secondTile {
+        width: 50%;
+      }
+      .thirdTile {
+        width: 50%;
+        position: relative;
+      }
+    }
+  }
+  &.tile {
+    .tileRow {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 50%;
+      .secondTile,
+      .thirdTile {
+        position: relative;
+        object-fit: cover;
+        display: flex;
+        flex: 1 1;
+        video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .thirdTile {
+        position: relative;
+        border-left: 1px solid #fff;
+        .mask {
+          border-left: 0px solid #fff;
+        }
+      }
+    }
+  }
+  .mask {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+  }
+}
+
+// Facebook Post Image Gallery by Kali
+.gallery-grid {
+  display: grid;
+  /* grid-gap: 0.25rem; */
+  grid-gap: 0;
+}
+
+.gallery-grid.rows-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-grid.rows-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-grid .grid-item {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery-grid .colspan-2 {
+  grid-column: span 2 / auto;
+}
+
+.gallery-grid .colspan-3 {
+  grid-column: span 3 / auto;
+}
+
+.gallery-grid .rowspan-2 {
+  grid-row: span 2 / auto;
+}
+
+.gallery-grid .rowspan-3 {
+  grid-row: span 3 / auto;
+}
+
+.gallery-grid {
+  width: 100%;
+  height: 500px;
+  margin: 0;
+}
+
+.gallery-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gallery-grid .grid-item {
+  position: relative;
+}
+
+.gallery-grid .gallery-more:after {
+  content: attr(data-more);
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 200%;
+}
+
+@media (max-width: 450px) {
+  .galler-grid {
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery-grid {
+    height: 350px;
+  }
+}

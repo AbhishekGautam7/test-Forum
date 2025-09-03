@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="212" height="212" viewBox="0 0 212 212">
+    <defs>
+        <radialGradient id="pj9fuujiib" cx="50%" cy="50%" r="49.297%" fx="50%" fy="50%">
+            <stop offset="0%" stop-opacity=".5"/>
+            <stop offset="39.609%" stop-opacity=".5"/>
+            <stop offset="100%" stop-opacity="0"/>
+        </radialGradient>
+        <path id="ffw0ndos9a" d="M0 0H212V212H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(0 -188) matrix(1 0 0 -1 0 400)">
+                <mask id="qja8ufq5rc" fill="#fff">
+                    <use xlink:href="#ffw0ndos9a"/>
+                </mask>
+                <circle cx="-1" cy="212" r="213" fill="url(#pj9fuujiib)" mask="url(#qja8ufq5rc)"/>
+                <g stroke="#FFF">
+                    <path d="M2.5 10L0 10 0 0 10 0 10 2.5" transform="matrix(1 0 0 -1 46 183)"/>
+                    <g>
+                        <path d="M0 5.769L0 0 5.769 0" transform="matrix(1 0 0 -1 46 183) translate(6 6)"/>
+                        <path d="M0 5.769L0 0 5.769 0" transform="matrix(1 0 0 -1 46 183) translate(6 6)"/>
+                    </g>
+                    <path d="M6 16.734L6 22 22 22 22 6 16.734 6" transform="matrix(1 0 0 -1 46 183)"/>
+                    <path d="M16.734 6L22 6 22 22 6 22 6 16.734M6 6L18 18" transform="matrix(1 0 0 -1 46 183)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

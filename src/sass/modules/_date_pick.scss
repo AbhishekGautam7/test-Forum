@@ -1,0 +1,280 @@
+/*
+==================================================================
+                        Schedule Calendar
+==================================================================
+*/
+
+    #schedulePicker {
+      clear: both;
+      background: #ededed;
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1px;
+      position:relative;
+      .titleRow{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom:20px;
+      }
+      button.closeBtn{
+        background:none;
+        border:none;
+        padding:0px;
+        span{
+          display:none;
+        }
+        .cross{
+          width: 25px;
+          height: 25px;
+          display: block;
+          position: relative;
+          &:before{
+            content:'';
+            display:block;
+            border-bottom:solid 2px #333;
+            width:20px;
+            height:20px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -6px;
+            left: 7px;
+        }
+          &:after{
+            content:'';
+            display:block;
+            border-bottom:solid 2px #333;
+            width:20px;
+            height:20px;
+            transform: rotate(136deg);
+            position: absolute;
+            left: 7px;
+            top: 7px;
+                      }
+        }
+      }
+      h3 {
+        font-size: 20px;
+        
+      }
+      .colon {
+        padding: 0 10px;
+      }
+      .selectbox {
+        height: 30px;
+        border-radius: 0px;
+        
+        border: solid 1px #ededed;
+        font-size: 14px;
+        position:relative;
+        &.am {
+          margin: 0 5px;
+        }
+        &.timezone {
+          margin: 0 15px;
+        }
+        .title{
+          padding:5px;
+          height:35px;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          .txt{
+            margin-bottom:7px;
+          }
+          .arrowBtn{
+            display:flex;
+            width:25px;
+            height:25px;
+            border:none;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            margin-bottom:7px;
+            cursor:pointer;
+            .downArrow{
+              display: block;
+              width: 9px;
+              border-right: solid 2px #333;
+              border-top: solid 2px #333;
+              height: 9px;
+             
+              position: relative;
+
+             &.close{
+              transform: rotate(135deg);
+              top: -2px;
+             }
+             &.open{
+              transform: rotate(314deg);
+              top:0px;
+             }
+            }
+          }
+            
+        }
+        ul{
+          position:absolute;
+          top:33px;
+          width:100%;
+          border:solid 1px #ededed;
+          li{
+            padding:5px;
+            cursor:pointer;
+            background:#fff;
+            border-bottom:solid 1px #ededed;
+            &:hover{
+              background:#ededed;
+            }
+          }
+        }
+        &.month {
+          min-width: 217px;
+          
+          
+         
+          
+        }
+      }
+      .react-dropdown-select-dropdown{
+          position:relative;
+          display:flex;
+          flex-direction: column;
+      }
+      .react-dropdown-select-dropdown-handle{
+          position:relative;
+          svg{
+              height:30px;
+              width:30px;
+              position:absolute;
+              right:0px;
+              top:0px;
+              z-index:99;
+              border:solid 1px red;
+          }
+      }
+      .calendarConfig {
+        background: white;
+        display: flex;
+        flex-direction: row;
+        min-height: 70px;
+        padding: 20px 30px;
+        align-items: center;
+        justify-content: space-between;
+  
+        margin-bottom: 1px;
+        flex-wrap: wrap;
+        .hour,
+        .minute {
+          width: 40px;
+          height: 30px;
+          background-color: #ededed;
+          border: none;
+          text-align: center;
+        }
+        .leftConfig {
+          display: flex;
+        }
+      }
+      .displayCalendar {
+        padding-top: 20px;
+        background: white;
+        padding: 0 30px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        ul.weeks {
+          margin: 0px;
+          padding: 20px 0 10px 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        ul.days {
+          display: block;
+          margin: 0px;
+          padding: 0px;
+          list-style: none;
+  
+          li {
+            width: 14.28%;
+            display: block;
+            float: left;
+            text-align: center;
+            padding: 6px 0;
+  
+            &.previousMonthDate,
+            &.nextMonthDate,
+            &.disabled {
+              color: #9197a3;
+              pointer-events: none;
+              &.current {
+                pointer-events: none;
+              }
+            }
+            &.current {
+              cursor: pointer;
+              color: #101010;
+            }
+            &.active {
+              cursor: pointer;
+            }
+            &.active.selected span {
+              background: #101010;
+  
+              color: white;
+            }
+            &.active:hover span {
+              background: #ededed;
+  
+              color: #101010;
+            }
+            span {
+              display: inline-block;
+              min-width: 30px;
+              min-height: 30px;
+              border-radius: 30px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+      .actionControl {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0px;
+       
+
+        .leftSide {
+          button {
+            margin-right: 5px;
+            span{
+              display:none;
+            }
+
+            
+          }
+        }
+        button {
+          margin: 0px;
+          border-radius: 0;
+          padding: 3px 10px;
+          font-size: 14px;
+     
+        }
+        .rightSide {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .selectedDate {
+            padding-right: 12px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    
+  

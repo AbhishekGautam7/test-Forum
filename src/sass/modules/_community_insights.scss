@@ -1,0 +1,235 @@
+.community-overview-content {
+	background: #edeff2;
+	padding: 32px 40px 40px 20px;
+	@media(max-width: 1199px) {
+		padding: 0 15px;
+		background: transparent;
+	}
+}
+
+.community-insights-wrap {
+	margin: 0 0 20px;
+	h4 {
+		color: #141823;
+		font-size: 20px;
+		font-weight: 600;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 0.95;
+		letter-spacing: normal;
+		text-align: left;
+	}
+}
+
+.insights-bredcrumb {
+	margin: 0 0 8px;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: left;
+	.breadcrumb-item {
+		+ {
+			.breadcrumb-item {
+				&:before {
+					content: '>';
+					color: rgba(20, 24, 35, 0.4);
+				}
+			}
+		}
+		a {
+			color: rgba(20, 24, 35, 0.4);
+		}
+		&.active {
+			color: #141823;
+		}
+	}
+}
+
+.overview-box {
+	background: #fff;
+	padding: 30px;
+	margin: 0 0 20px;
+}
+
+.overview-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 20px;
+	h2 {
+		color: #141823;
+		font-size: 32px;
+		font-weight: 600;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 0.59;
+		letter-spacing: normal;
+		@media(max-width: 575px) {
+			font-size: 28px;
+		}
+	}
+}
+
+.overview-graph-header {
+	margin: 0 0 20px;
+	padding: 0 0 30px;
+	border-bottom: 1px solid  #e0e0e0;
+	h4 {
+		font-size: 20px;
+		font-weight: 600;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 0.95;
+		letter-spacing: normal;
+		text-align: left;
+	}
+}
+
+.overview-graph-body {
+	.active-graph-wrap {
+		width: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		&.overview-graph-height {
+			height: max-content;
+		}
+		&.members-graph-height {
+			height: 278px;
+			@media(max-width: 575px) {
+				height: max-content;
+			}
+		}
+		&.circle-graph-height {
+			max-width: 235px;
+			height: 281px;
+		}
+	}
+}
+
+.overview-graph-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 30px;
+	@media(max-width: 425px) {
+		display: block;
+	}
+	&.flex-start {
+		align-items: start;
+	}
+}
+
+.overview-graph-progress-holder {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex: 1;
+	.overview-graph-progress {
+		margin: 0 25px 10px 0;
+		.overview-graph-info {
+			display: flex;
+			align-items: center;
+			margin: 0 0 10px;
+			.overview-count {
+				font-size: 32px;
+				font-weight: 600;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 0.59;
+				letter-spacing: normal;
+				text-align: left;
+				color: #141823;
+				@media(max-width: 575px) {
+					font-size: 28px;
+				}
+			}
+			.overview-percentage {
+				font-size: 14px;
+				font-weight: 600;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.36;
+				letter-spacing: normal;
+				text-align: left;
+				margin-left: 15px;
+				img {
+					width: 9px;
+					height: 9px;
+					object-fit: contain;
+				}
+				&.overview-percentage-down {
+					color: #f04a4a;
+				}
+				&.overview-percentage-up {
+					color: #22d072;
+				}
+			}
+		}
+		.status-text {
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.36;
+			letter-spacing: normal;
+			text-align: left;
+			color: #141823;
+		}
+		.all-question-text {
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.36;
+			letter-spacing: normal;
+			text-align: left;
+			color: rgba(20, 24, 35, 0.4);
+		}
+	}
+}
+
+.overview-graph-list {
+	li {
+		display: flex;
+		align-items: center;
+		margin: 0 0 10px;
+		&:last-child {
+			margin: 0;
+		}
+		p {
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.36;
+			letter-spacing: normal;
+			text-align: left;
+			color: #141823;
+			flex: 1;
+		}
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			width: 18px;
+			height: 4px;
+			border-radius: 11px;
+			margin-right: 8px;
+			&.default-graph-color {
+				background: #ededed;
+			}
+			&.active-graph-color {
+				background: #386cbb;
+			}
+			&.inactive-graph-color {
+				background: #88a7d6;
+			}
+		}
+	}
+}

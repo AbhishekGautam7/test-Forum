@@ -1,0 +1,107 @@
+@use "../base/variables_override" as *;
+
+.chat-member {
+  padding: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($primary-rgb, 0.1);
+  }
+}
+
+.community-chat {
+  background-image: url("/assets/img/chat-bg.jpg");
+  align-self: flex-start;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.settings-container {
+  padding: 8px 0;
+}
+
+.sub-section {
+  margin: 4px 8px 0 16px;
+}
+
+.toggle-container {
+  margin-bottom: 8px;
+}
+
+.sub-section {
+  margin: 4px 8px 0 16px;
+}
+
+.toggle-container {
+  margin-bottom: 8px;
+}
+
+.pl-24 {
+  padding-left: 24px !important;
+}
+
+.content-css {
+  padding: 15px 20px;
+}
+
+.show-more-less-clickable {
+  cursor: pointer;
+  color: grey;
+}
+
+.ql-toolbar.ql-snow {
+  display: none;
+}
+
+/* Editor toolbar styles */
+.KK-editor-toolbar {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e7e7e7;
+  padding: 6px;
+}
+
+.KK-editor-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.KK-editor-toolbar button:hover {
+  color: #007bff;
+}
+
+/* Editor content styles */
+.KK-editor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 200px;
+  background-color: white;
+  margin-bottom: 10px;
+
+  &:focus-visible {
+    outline: 1px solid #c1c1c1;
+  }
+}
+
+.KK-editor-select {
+  margin-left: 2px;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 4px;
+
+  &:focus-visible {
+    outline: 1px solid #c1c1c1;
+  }
+}
+
+.KK-editor-first {
+}
+
+.KK-editor-second {
+}

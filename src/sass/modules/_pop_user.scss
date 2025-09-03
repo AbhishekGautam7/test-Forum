@@ -1,0 +1,40 @@
+#popUsers {
+  position: absolute;
+  background: white;
+  top: 41px;
+  z-index: 999;
+  width: 500px;
+  right: 0;
+  border: solid 1px #ededed;
+  .select-member-drop.scrollbar-wrap {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+  }
+  .closeBtn {
+    right: -11px;
+    left: auto;
+  }
+  .select-member {
+    border: none;
+  }
+  .btns {
+    display: flex;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 12px 15px;
+      border: 1px solid #ededed;
+      background-color: #fff;
+      font-weight: 600;
+      font-stretch: normal;
+      line-height: 1.36;
+      color: #386cbb;
+      margin: 10px;
+      flex: 1;
+    }
+  }
+}
